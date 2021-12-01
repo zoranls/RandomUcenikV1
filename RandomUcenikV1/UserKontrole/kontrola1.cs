@@ -90,7 +90,7 @@ namespace RandomUcenikV1
             temp2 = nizUCENICI[broj];
 
         }
-        //-----//
+        //------//
         int temp1 = 0;
         private void button1_Click(object sender, EventArgs e)
         {
