@@ -10,3 +10,4 @@ C:\Users\Zoki\source\repos\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV
 C:\Users\Zoki\source\repos\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.webSajt.resources
 C:\Users\Zoki\source\repos\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.csprojAssemblyReference.cache
 C:\Users\Zoki\source\repos\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.Properties.Resources.resources
+C:\Users\Zoki\source\repos\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.alatics.resources
