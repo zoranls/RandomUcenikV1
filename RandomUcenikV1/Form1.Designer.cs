@@ -33,12 +33,12 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.kontrola11 = new RandomUcenikV1.kontrola1();
             this.webSajt1 = new RandomUcenikV1.webSajt();
-            this.button6 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -112,6 +112,16 @@
             this.panel1.Size = new System.Drawing.Size(103, 379);
             this.panel1.TabIndex = 1;
             // 
+            // button6
+            // 
+            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button6.Location = new System.Drawing.Point(7, 87);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(88, 55);
+            this.button6.TabIndex = 5;
+            this.button6.Text = "Alati";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
             // button5
             // 
             this.button5.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -163,16 +173,6 @@
             this.webSajt1.Name = "webSajt1";
             this.webSajt1.Size = new System.Drawing.Size(697, 379);
             this.webSajt1.TabIndex = 0;
-            // 
-            // button6
-            // 
-            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button6.Location = new System.Drawing.Point(7, 87);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(88, 55);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Alati";
-            this.button6.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
