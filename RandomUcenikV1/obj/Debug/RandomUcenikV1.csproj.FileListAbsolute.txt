@@ -1,0 +1,12 @@
+C:\Users\Zoki\source\repos\RandomUcenikV1\RandomUcenikV1\bin\Debug\RandomUcenikV1.exe.config
+C:\Users\Zoki\source\repos\RandomUcenikV1\RandomUcenikV1\bin\Debug\RandomUcenikV1.exe
+C:\Users\Zoki\source\repos\RandomUcenikV1\RandomUcenikV1\bin\Debug\RandomUcenikV1.pdb
+C:\Users\Zoki\source\repos\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.Form1.resources
+C:\Users\Zoki\source\repos\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.csproj.GenerateResource.cache
+C:\Users\Zoki\source\repos\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.csproj.CoreCompileInputs.cache
+C:\Users\Zoki\source\repos\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.exe
+C:\Users\Zoki\source\repos\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.pdb
+C:\Users\Zoki\source\repos\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.kontrola1.resources
+C:\Users\Zoki\source\repos\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.webSajt.resources
+C:\Users\Zoki\source\repos\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.csprojAssemblyReference.cache
+C:\Users\Zoki\source\repos\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.Properties.Resources.resources
