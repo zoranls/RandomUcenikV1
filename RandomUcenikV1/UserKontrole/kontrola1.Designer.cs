@@ -41,8 +41,12 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button2
@@ -62,7 +66,7 @@
             this.listBox2.ItemHeight = 16;
             this.listBox2.Items.AddRange(new object[] {
             "Ukloni/Dodaj ucenika"});
-            this.listBox2.Location = new System.Drawing.Point(8, 9);
+            this.listBox2.Location = new System.Drawing.Point(8, 11);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(203, 244);
             this.listBox2.TabIndex = 10;
@@ -84,7 +88,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(50, 163);
+            this.label1.Location = new System.Drawing.Point(-3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 17);
             this.label1.TabIndex = 8;
@@ -128,7 +132,7 @@
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Location = new System.Drawing.Point(466, 35);
+            this.panel1.Location = new System.Drawing.Point(307, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(221, 329);
             this.panel1.TabIndex = 13;
@@ -142,9 +146,9 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(500, 371);
+            this.radioButton1.Location = new System.Drawing.Point(15, 31);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(72, 21);
+            this.radioButton1.Size = new System.Drawing.Size(96, 24);
             this.radioButton1.TabIndex = 14;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Odabir";
@@ -156,7 +160,7 @@
             this.panel2.Controls.Add(this.listBox1);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.comboBox1);
-            this.panel2.Location = new System.Drawing.Point(166, 63);
+            this.panel2.Location = new System.Drawing.Point(49, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(229, 329);
             this.panel2.TabIndex = 16;
@@ -164,28 +168,63 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(603, 371);
+            this.radioButton2.Location = new System.Drawing.Point(118, 31);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(74, 21);
+            this.radioButton2.Size = new System.Drawing.Size(96, 24);
             this.radioButton2.TabIndex = 15;
             this.radioButton2.Text = "Izmena";
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.Click += new System.EventHandler(this.radioButton2_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.DarkGray;
+            this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Font = new System.Drawing.Font("OCR A Extended", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(214, 351);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(237, 64);
+            this.groupBox1.TabIndex = 17;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Prikaz";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(630, 351);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 17);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "label2";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(633, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 17);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "label3";
+            // 
             // kontrola1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Menu;
+            this.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Name = "kontrola1";
-            this.Size = new System.Drawing.Size(836, 447);
+            this.Size = new System.Drawing.Size(679, 415);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,5 +244,8 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

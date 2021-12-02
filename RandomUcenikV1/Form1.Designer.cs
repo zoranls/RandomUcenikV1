@@ -54,7 +54,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(800, 71);
+            this.groupBox1.Size = new System.Drawing.Size(1204, 71);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.MouseCaptureChanged += new System.EventHandler(this.groupBox1_MouseCaptureChanged);
@@ -64,7 +64,7 @@
             this.button3.BackColor = System.Drawing.Color.Khaki;
             this.button3.Dock = System.Windows.Forms.DockStyle.Right;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(647, 18);
+            this.button3.Location = new System.Drawing.Point(1051, 18);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(50, 50);
             this.button3.TabIndex = 2;
@@ -79,7 +79,7 @@
             this.button2.BackColor = System.Drawing.Color.Teal;
             this.button2.Dock = System.Windows.Forms.DockStyle.Right;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(697, 18);
+            this.button2.Location = new System.Drawing.Point(1101, 18);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(50, 50);
             this.button2.TabIndex = 1;
@@ -92,7 +92,7 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button1.Dock = System.Windows.Forms.DockStyle.Right;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(747, 18);
+            this.button1.Location = new System.Drawing.Point(1151, 18);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(50, 50);
             this.button1.TabIndex = 0;
@@ -152,7 +152,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(103, 71);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(697, 379);
+            this.panel2.Size = new System.Drawing.Size(1101, 379);
             this.panel2.TabIndex = 2;
             // 
             // kontrola11
@@ -161,7 +161,7 @@
             this.kontrola11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kontrola11.Location = new System.Drawing.Point(0, 0);
             this.kontrola11.Name = "kontrola11";
-            this.kontrola11.Size = new System.Drawing.Size(697, 379);
+            this.kontrola11.Size = new System.Drawing.Size(1101, 379);
             this.kontrola11.TabIndex = 1;
             this.kontrola11.Load += new System.EventHandler(this.kontrola11_Load);
             // 
@@ -171,7 +171,7 @@
             this.webSajt1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.webSajt1.Location = new System.Drawing.Point(0, 0);
             this.webSajt1.Name = "webSajt1";
-            this.webSajt1.Size = new System.Drawing.Size(697, 379);
+            this.webSajt1.Size = new System.Drawing.Size(1101, 379);
             this.webSajt1.TabIndex = 0;
             // 
             // Form1
@@ -179,7 +179,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1204, 450);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);

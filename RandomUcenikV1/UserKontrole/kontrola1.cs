@@ -152,6 +152,11 @@ namespace RandomUcenikV1
         {
             timer1.Enabled = true; 
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+            groupBox1.BackColor = Color.Red;
+        }
     }
 }
 /*
