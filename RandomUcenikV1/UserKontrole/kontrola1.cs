@@ -155,6 +155,11 @@ namespace RandomUcenikV1
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
+        
+        }
+
+        private void groupBox1_MouseCaptureChanged(object sender, EventArgs e)
+        {
             groupBox1.BackColor = Color.Red;
         }
     }
