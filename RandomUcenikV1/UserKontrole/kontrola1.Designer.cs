@@ -174,7 +174,7 @@
             this.radioButton2.TabIndex = 15;
             this.radioButton2.Text = "Izmena";
             this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.Click += new System.EventHandler(this.radioButton2_Click);
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // groupBox1
             // 

@@ -23,11 +23,19 @@ namespace RandomUcenikV1
         string path1;
         Random rand = new Random();
         string[] nizPROVERADUPL;
-
+        bool proveraStanja = false;
         string[] nizUCENICI;
         //  
 
         int brojUcenika = 0;
+
+        struct Pozicije
+        {
+            public int x;
+            public int y;
+        }
+
+        Pozicije PozicijePanela1 = new Pozicije();
         //BELEZENJE U NIZ IZ STREAMREADER
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
@@ -146,18 +154,25 @@ namespace RandomUcenikV1
                 panel1.Top = korak;
             }
              
-        }
+        }  
 
-        private void radioButton2_Click(object sender, EventArgs e)
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            timer1.Enabled = true; 
-        }
+            proveraStanja = true;
+            switch (proveraStanja)
+            {
+                case true:
+                    timer1.Enabled = true;
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-        
-        }
+                    proveraStanja = false;
+                    break;
+                case false:
 
+                    break;
+            }
+
+        }
+       
         bool provera = true;
         private void groupBox1_MouseCaptureChanged(object sender, EventArgs e)
         {
@@ -174,6 +189,8 @@ namespace RandomUcenikV1
                     break;
             } 
         }
+
+       
     }
 }
 /*
