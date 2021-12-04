@@ -158,9 +158,21 @@ namespace RandomUcenikV1
         
         }
 
+        bool provera = true;
         private void groupBox1_MouseCaptureChanged(object sender, EventArgs e)
         {
-            groupBox1.BackColor = Color.Red;
+            int a = groupBox1.Location.Y;
+            switch (provera)
+            {
+                case true:
+                    groupBox1.Location = new Point(groupBox1.Location.X, a -= 25);
+                    provera = false;
+                    break;
+                case false:
+                    groupBox1.Location = new Point(groupBox1.Location.X, a += 25);
+                    provera = true;
+                    break;
+            } 
         }
     }
 }
