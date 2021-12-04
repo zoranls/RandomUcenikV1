@@ -156,12 +156,17 @@ namespace RandomUcenikV1
              
         }  
 
+
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
+            PozicijePanela1.x = panel1.Location.X;
+            PozicijePanela1.y = panel1.Location.Y;
+
             proveraStanja = true;
             switch (proveraStanja)
             {
                 case true:
+                    panel2.Location = new Point(PozicijePanela1.x ,PozicijePanela1.y -= 30); 
                     timer1.Enabled = true;
 
                     proveraStanja = false;
@@ -169,8 +174,7 @@ namespace RandomUcenikV1
                 case false:
 
                     break;
-            }
-
+            } 
         }
        
         bool provera = true;
