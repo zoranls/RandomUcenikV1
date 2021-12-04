@@ -139,24 +139,8 @@ namespace RandomUcenikV1
             OverWrite.Close();
         }
         //=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+//
-
-        private void listBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
          
-        int korak =368;
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            while (korak>1)
-            {
-                korak -= 1;
-                panel1.Top = korak;
-            }
-             
-        }  
-
-
+       
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             PozicijePanela1.x = panel2.Location.X;
@@ -167,8 +151,7 @@ namespace RandomUcenikV1
             {
                 case true:
                     panel2.Location = new Point(PozicijePanela1.x ,PozicijePanela1.y -= 30); 
-                    timer1.Enabled = true;
-
+ 
                     proveraStanja = false;
                     break;
                 case false:

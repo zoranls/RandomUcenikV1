@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.button2 = new System.Windows.Forms.Button();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -37,7 +36,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -104,7 +102,6 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(197, 244);
             this.listBox1.TabIndex = 7;
-            this.listBox1.Click += new System.EventHandler(this.listBox1_Click_1);
             // 
             // button1
             // 
@@ -136,11 +133,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(221, 329);
             this.panel1.TabIndex = 13;
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 20;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // radioButton1
             // 
@@ -240,7 +232,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.RadioButton radioButton2;
