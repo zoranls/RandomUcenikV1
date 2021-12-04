@@ -159,8 +159,8 @@ namespace RandomUcenikV1
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            PozicijePanela1.x = panel1.Location.X;
-            PozicijePanela1.y = panel1.Location.Y;
+            PozicijePanela1.x = panel2.Location.X;
+            PozicijePanela1.y = panel2.Location.Y;
 
             proveraStanja = true;
             switch (proveraStanja)
