@@ -139,8 +139,7 @@ namespace RandomUcenikV1
             OverWrite.Close();
         }
         //=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+//
-         
-       
+
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             PozicijePanela1.x = panel2.Location.X;
@@ -150,16 +149,16 @@ namespace RandomUcenikV1
             switch (proveraStanja)
             {
                 case true:
-                    panel2.Location = new Point(PozicijePanela1.x ,PozicijePanela1.y -= 30); 
- 
+                    panel2.Location = new Point(PozicijePanela1.x, PozicijePanela1.y -= 90);
+
                     proveraStanja = false;
                     break;
                 case false:
 
                     break;
-            } 
+            }
         }
-       
+
         bool provera = true;
         private void groupBox1_MouseCaptureChanged(object sender, EventArgs e)
         {
@@ -174,10 +173,13 @@ namespace RandomUcenikV1
                     groupBox1.Location = new Point(groupBox1.Location.X, a += 25);
                     provera = true;
                     break;
-            } 
+            }
         }
 
-       
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 /*
