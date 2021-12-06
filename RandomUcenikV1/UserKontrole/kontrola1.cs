@@ -140,25 +140,10 @@ namespace RandomUcenikV1
         }
         //=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+//
 
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            PozicijePanela1.x = panel2.Location.X;
-            PozicijePanela1.y = panel2.Location.Y;
 
-            proveraStanja = true;
-            switch (proveraStanja)
-            {
-                case true:
-                    panel2.Location = new Point(PozicijePanela1.x, PozicijePanela1.y -= 90);
-
-                    proveraStanja = false;
-                    break;
-                case false:
-
-                    break;
-            }
         }
-
         bool provera = true;
         private void groupBox1_MouseCaptureChanged(object sender, EventArgs e)
         {
@@ -175,11 +160,30 @@ namespace RandomUcenikV1
                     break;
             }
         }
-
-        private void timer1_Tick(object sender, EventArgs e)
+        //=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+//
+        int abc = 0;
+       bool proveraStanja;
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
+            PozicijePanela1.x = panel2.Location.X;
+            PozicijePanela1.y = panel2.Location.Y;
 
-        }
+            switch (proveraStanja)
+            {
+                case true:
+                    panel2.Location = new Point(PozicijePanela1.x, PozicijePanela1.y -= 280);
+                    abc = PozicijePanela1.y;
+                    proveraStanja = false;
+                    break;
+                case false:
+                    panel2.Location = new Point(PozicijePanela1.x, abc +=280 );
+
+                    proveraStanja = true;
+                    break;
+            } 
+        } 
+
+     
     }
 }
 /*
