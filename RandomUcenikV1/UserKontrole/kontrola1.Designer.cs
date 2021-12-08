@@ -44,6 +44,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -66,9 +67,9 @@
             this.listBox2.ItemHeight = 16;
             this.listBox2.Items.AddRange(new object[] {
             "Ukloni/Dodaj ucenika"});
-            this.listBox2.Location = new System.Drawing.Point(8, 11);
+            this.listBox2.Location = new System.Drawing.Point(8, 43);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(203, 244);
+            this.listBox2.Size = new System.Drawing.Size(203, 212);
             this.listBox2.TabIndex = 10;
             // 
             // comboBox1
@@ -127,6 +128,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Info;
+            this.panel1.Controls.Add(this.comboBox2);
             this.panel1.Controls.Add(this.listBox2);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
@@ -206,6 +208,21 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // comboBox2
+            // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "11",
+            "12",
+            "13",
+            "primer"});
+            this.comboBox2.Location = new System.Drawing.Point(50, 9);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 24);
+            this.comboBox2.TabIndex = 10;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
             // kontrola1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -245,5 +262,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

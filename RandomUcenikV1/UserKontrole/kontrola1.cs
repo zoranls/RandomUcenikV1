@@ -144,6 +144,7 @@ namespace RandomUcenikV1
         {
 
         }
+
         bool provera = true;
         private void groupBox1_MouseCaptureChanged(object sender, EventArgs e)
         {
@@ -162,9 +163,10 @@ namespace RandomUcenikV1
         }
         //=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+//
         int abc = 0;
-       bool proveraStanja;
+      
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
+            bool proveraStanja=true;
             PozicijePanela1.x = panel2.Location.X;
             PozicijePanela1.y = panel2.Location.Y;
 
@@ -181,12 +183,45 @@ namespace RandomUcenikV1
                     proveraStanja = true;
                     break;
             } 
-        } 
+        }
 
-     
+        string path2;
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int brojUcenika1=0;
+            switch (comboBox2.SelectedIndex)
+            {
+                case 0:
+                    path2 = Path.GetFullPath("11.txt");
+                    break;
+                case 1:
+                    path2 = Path.GetFullPath("12.txt");
+                    break;
+                case 2:
+                    path2 = Path.GetFullPath("13.txt");
+                    break;
+                case 3:
+                    path2 = Path.GetFullPath("primer1.txt");
+                    break;
+            }
+            StreamReader citacIzmene = new StreamReader(path2);
+            string temp2;
+             while (!citacIzmene.EndOfStream)
+            {
+                temp2 = citacIzmene.ReadLine();
+                brojUcenika1++;
+            }  
+            string[] izmenaUcenici = new string[brojUcenika1];
+             int temp1=0;
+            
+            while (!citacIzmene.EndOfStream)
+            {
+                izmenaUcenici[temp1] = citacIzmene.ReadLine();
+                temp1++;
+            } 
+        }
     }
 }
 /*
-  TODO:Napravi da svki ucenik ide samo jednom u svakom krugu
   TODO:Duznici
   */
