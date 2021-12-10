@@ -117,27 +117,8 @@ namespace RandomUcenikV1
                     break;
                     { }
             }
-        }
-        //=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+//
-        string[] f = new string[7];
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            string[] noviNiz = f;
-            int a = listBox2.SelectedIndex;
-            for (int i = a; i < noviNiz.Length - 1; i++)
-            {
-                noviNiz[i] = noviNiz[i + 1];
-
-            }
-            StreamWriter OverWrite = new StreamWriter(@"C:\Users\Zoki\source\repos\WindowsFormsApp1\WindowsFormsApp1\BazePodataka\TextFile1.txt");
-            int c = 0;
-            while (c < noviNiz.Length)
-            {
-                OverWrite.WriteLine(noviNiz[c]);
-                c++;
-            }
-            OverWrite.Close();
-        }
+        } 
+       
         //=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+//
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -186,9 +167,11 @@ namespace RandomUcenikV1
         }
 
         string path2;
+        int brojUcenika1 = 0;
+        string[] izmenaUcenici;
+
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int brojUcenika1=0;
             switch (comboBox2.SelectedIndex)
             {
                 case 0:
@@ -211,15 +194,37 @@ namespace RandomUcenikV1
                 temp2 = citacIzmene.ReadLine();
                 brojUcenika1++;
             }  
-            string[] izmenaUcenici = new string[brojUcenika1];
              int temp1=0;
-            
+            izmenaUcenici = new string[brojUcenika1];
+
+            citacIzmene.BaseStream.Seek(0, SeekOrigin.Begin);
+            { }
             while (!citacIzmene.EndOfStream)
             {
                 izmenaUcenici[temp1] = citacIzmene.ReadLine();
                 temp1++;
-            } 
+            }
+            for (int i = 0; i < brojUcenika1; i++)
+            {
+                listBox2.Items.Add(izmenaUcenici[i]);
+            }
+
         }
+        //-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_//
+        int prosirenjeRazreda; 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int izabranIndeksIzbaci = comboBox2.SelectedIndex-1; //targer index
+            string[] nizOverWrite = izmenaUcenici;
+
+            for (int i = izabranIndeksIzbaci+1; i < brojUcenika1-1; i++)
+            {
+                nizOverWrite[i] = nizOverWrite[i+1]; 
+            }
+
+            
+        }
+
     }
 }
 /*
