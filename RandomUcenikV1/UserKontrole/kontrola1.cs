@@ -233,6 +233,7 @@ namespace RandomUcenikV1
             {
                 finalOverWrite.WriteLine(nizOverWrite[i]);
             }
+            finalOverWrite.Close();
         }
     }
 }
