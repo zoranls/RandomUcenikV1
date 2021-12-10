@@ -117,8 +117,8 @@ namespace RandomUcenikV1
                     break;
                     { }
             }
-        } 
-       
+        }
+
         //=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+//
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -144,10 +144,10 @@ namespace RandomUcenikV1
         }
         //=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+//
         int abc = 0;
-      
+
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            bool proveraStanja=true;
+            bool proveraStanja = true;
             PozicijePanela1.x = panel2.Location.X;
             PozicijePanela1.y = panel2.Location.Y;
 
@@ -159,11 +159,11 @@ namespace RandomUcenikV1
                     proveraStanja = false;
                     break;
                 case false:
-                    panel2.Location = new Point(PozicijePanela1.x, abc +=280 );
+                    panel2.Location = new Point(PozicijePanela1.x, abc += 280);
 
                     proveraStanja = true;
                     break;
-            } 
+            }
         }
 
         string path2;
@@ -189,12 +189,12 @@ namespace RandomUcenikV1
             }
             StreamReader citacIzmene = new StreamReader(path2);
             string temp2;
-             while (!citacIzmene.EndOfStream)
+            while (!citacIzmene.EndOfStream)
             {
                 temp2 = citacIzmene.ReadLine();
                 brojUcenika1++;
-            }  
-             int temp1=0;
+            }
+            int temp1 = 0;
             izmenaUcenici = new string[brojUcenika1];
 
             citacIzmene.BaseStream.Seek(0, SeekOrigin.Begin);
@@ -208,23 +208,32 @@ namespace RandomUcenikV1
             {
                 listBox2.Items.Add(izmenaUcenici[i]);
             }
-
+            citacIzmene.Close(); 
         }
         //-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_//
-        int prosirenjeRazreda; 
+        int prosirenjeRazreda;
         private void button2_Click(object sender, EventArgs e)
         {
-            int izabranIndeksIzbaci = comboBox2.SelectedIndex-1; //targer index
-            string[] nizOverWrite = izmenaUcenici;
+            int izabranIndeksIzbaci = listBox2.SelectedIndex - 1; //targer index
+            string[] nizReadyForOverWrite = izmenaUcenici;
 
-            for (int i = izabranIndeksIzbaci+1; i < brojUcenika1-1; i++)
+            for (int i = izabranIndeksIzbaci; i < brojUcenika1-1; i++)
             {
-                nizOverWrite[i] = nizOverWrite[i+1]; 
+                nizReadyForOverWrite[i] = nizReadyForOverWrite[i + 1];
             }
-
-            
+            string[] nizOverWrite = new string[nizReadyForOverWrite.Length - 1];
+            for (int i = 0; i < nizReadyForOverWrite.Length-1; i++)
+            {
+                nizOverWrite[i] = nizReadyForOverWrite[i];
+            }
+            //konacno prepisivanje
+            StreamWriter finalOverWrite = new StreamWriter(path2);
+       //     finalOverWrite.Flush();
+            for (int i = 0; i < nizOverWrite.Length; i++)
+            {
+                finalOverWrite.WriteLine(nizOverWrite[i]);
+            }
         }
-
     }
 }
 /*
