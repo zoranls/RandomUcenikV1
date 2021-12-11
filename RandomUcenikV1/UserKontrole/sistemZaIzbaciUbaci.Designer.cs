@@ -74,6 +74,7 @@
             this.radioButton3.TabIndex = 14;
             this.radioButton3.Text = "Dodaj";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // textBox1
             // 

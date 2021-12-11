@@ -33,11 +33,12 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
+            this.sistemZaIzbaciUbaci1 = new RandomUcenikV1.sistemZaIzbaciUbaci();
             this.kontrola11 = new RandomUcenikV1.kontrola1();
             this.webSajt1 = new RandomUcenikV1.webSajt();
             this.groupBox1.SuspendLayout();
@@ -55,7 +56,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1204, 71);
+            this.groupBox1.Size = new System.Drawing.Size(779, 71);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.MouseCaptureChanged += new System.EventHandler(this.groupBox1_MouseCaptureChanged);
@@ -65,7 +66,7 @@
             this.button3.BackColor = System.Drawing.Color.Khaki;
             this.button3.Dock = System.Windows.Forms.DockStyle.Right;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(1051, 18);
+            this.button3.Location = new System.Drawing.Point(626, 18);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(50, 50);
             this.button3.TabIndex = 2;
@@ -80,7 +81,7 @@
             this.button2.BackColor = System.Drawing.Color.Teal;
             this.button2.Dock = System.Windows.Forms.DockStyle.Right;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(1101, 18);
+            this.button2.Location = new System.Drawing.Point(676, 18);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(50, 50);
             this.button2.TabIndex = 1;
@@ -93,7 +94,7 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button1.Dock = System.Windows.Forms.DockStyle.Right;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(1151, 18);
+            this.button1.Location = new System.Drawing.Point(726, 18);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(50, 50);
             this.button1.TabIndex = 0;
@@ -114,6 +115,16 @@
             this.panel1.Size = new System.Drawing.Size(103, 379);
             this.panel1.TabIndex = 1;
             // 
+            // button7
+            // 
+            this.button7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button7.Location = new System.Drawing.Point(7, 159);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(88, 55);
+            this.button7.TabIndex = 6;
+            this.button7.Text = "Alati";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
             // button6
             // 
             this.button6.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -124,6 +135,7 @@
             this.button6.TabIndex = 5;
             this.button6.Text = "Uklanjanje/Dodavanje";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -150,23 +162,23 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.Controls.Add(this.sistemZaIzbaciUbaci1);
             this.panel2.Controls.Add(this.kontrola11);
             this.panel2.Controls.Add(this.webSajt1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(103, 71);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1101, 379);
+            this.panel2.Size = new System.Drawing.Size(676, 379);
             this.panel2.TabIndex = 2;
             // 
-            // button7
+            // sistemZaIzbaciUbaci1
             // 
-            this.button7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button7.Location = new System.Drawing.Point(7, 159);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(88, 55);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Alati";
-            this.button7.UseVisualStyleBackColor = true;
+            this.sistemZaIzbaciUbaci1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.sistemZaIzbaciUbaci1.Location = new System.Drawing.Point(0, 0);
+            this.sistemZaIzbaciUbaci1.Name = "sistemZaIzbaciUbaci1";
+            this.sistemZaIzbaciUbaci1.Size = new System.Drawing.Size(476, 379);
+            this.sistemZaIzbaciUbaci1.TabIndex = 7;
+            this.sistemZaIzbaciUbaci1.Visible = false;
             // 
             // kontrola11
             // 
@@ -174,9 +186,8 @@
             this.kontrola11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kontrola11.Location = new System.Drawing.Point(0, 0);
             this.kontrola11.Name = "kontrola11";
-            this.kontrola11.Size = new System.Drawing.Size(1101, 379);
+            this.kontrola11.Size = new System.Drawing.Size(676, 379);
             this.kontrola11.TabIndex = 1;
-            this.kontrola11.Load += new System.EventHandler(this.kontrola11_Load);
             // 
             // webSajt1
             // 
@@ -184,7 +195,7 @@
             this.webSajt1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.webSajt1.Location = new System.Drawing.Point(0, 0);
             this.webSajt1.Name = "webSajt1";
-            this.webSajt1.Size = new System.Drawing.Size(1101, 379);
+            this.webSajt1.Size = new System.Drawing.Size(676, 379);
             this.webSajt1.TabIndex = 0;
             // 
             // Form1
@@ -192,7 +203,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(1204, 450);
+            this.ClientSize = new System.Drawing.Size(779, 450);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
@@ -224,6 +235,7 @@
         private webSajt webSajt1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
+        private sistemZaIzbaciUbaci sistemZaIzbaciUbaci1;
     }
 }
 

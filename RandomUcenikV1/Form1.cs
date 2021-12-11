@@ -115,9 +115,10 @@ namespace RandomUcenikV1
             }
         }
 
-        private void kontrola11_Load(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
-
+            this.sistemZaIzbaciUbaci1.BringToFront();
+            this.sistemZaIzbaciUbaci1.Visible = true;
         }
     }
 }

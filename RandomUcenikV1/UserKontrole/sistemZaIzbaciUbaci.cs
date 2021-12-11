@@ -81,6 +81,23 @@ namespace RandomUcenikV1
             }
         }
 
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            switch (radioButton3.Checked)
+            {
+                case true:
+                    button3.Enabled = true;
+                    button2.Enabled = false;
+                    textBox1.Enabled = true;
+                    break;
+                case false:
+                    button3.Enabled = false;
+                    button2.Enabled = true;
+                    textBox1.Enabled = false;
+                    break;
+            }
+        }
+
         //=+=+=+=+=+=+=+=+=+=+IZBACIVANJE UCENIKA =+=+=+=+=+=+=+=+=+=+
 
         int prosirenjeRazreda;
@@ -124,15 +141,12 @@ namespace RandomUcenikV1
                 }
             }
         }
-
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
+         
         //_-=SISTEM ZA DODAVANJE=-_
         private void button3_Click(object sender, EventArgs e)
         {
             string[] nizDodavanjaDjaka = new string[brojUcenika1];
         }
+
     }
 }
