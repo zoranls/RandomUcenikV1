@@ -36,12 +36,14 @@
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Info;
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.Ukloni);
             this.panel1.Controls.Add(this.radioButton3);
             this.panel1.Controls.Add(this.textBox1);
@@ -50,15 +52,15 @@
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Location = new System.Drawing.Point(41, 17);
+            this.panel1.Location = new System.Drawing.Point(80, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(221, 329);
+            this.panel1.Size = new System.Drawing.Size(291, 371);
             this.panel1.TabIndex = 14;
             // 
             // Ukloni
             // 
             this.Ukloni.AutoSize = true;
-            this.Ukloni.Location = new System.Drawing.Point(125, 305);
+            this.Ukloni.Location = new System.Drawing.Point(47, 223);
             this.Ukloni.Name = "Ukloni";
             this.Ukloni.Size = new System.Drawing.Size(68, 21);
             this.Ukloni.TabIndex = 15;
@@ -68,7 +70,7 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(125, 282);
+            this.radioButton3.Location = new System.Drawing.Point(142, 223);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(66, 21);
             this.radioButton3.TabIndex = 14;
@@ -80,7 +82,7 @@
             // 
             this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(8, 291);
+            this.textBox1.Location = new System.Drawing.Point(18, 277);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(97, 27);
             this.textBox1.TabIndex = 13;
@@ -94,7 +96,7 @@
             "12",
             "13",
             "primer"});
-            this.comboBox2.Location = new System.Drawing.Point(50, 9);
+            this.comboBox2.Location = new System.Drawing.Point(157, 10);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 24);
             this.comboBox2.TabIndex = 10;
@@ -106,15 +108,15 @@
             this.listBox2.ItemHeight = 16;
             this.listBox2.Items.AddRange(new object[] {
             "Ukloni/Dodaj ucenika"});
-            this.listBox2.Location = new System.Drawing.Point(8, 43);
+            this.listBox2.Location = new System.Drawing.Point(18, 43);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(203, 180);
+            this.listBox2.Size = new System.Drawing.Size(221, 164);
             this.listBox2.TabIndex = 10;
             // 
             // button3
             // 
             this.button3.Enabled = false;
-            this.button3.Location = new System.Drawing.Point(8, 229);
+            this.button3.Location = new System.Drawing.Point(18, 310);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(97, 47);
             this.button3.TabIndex = 12;
@@ -126,13 +128,23 @@
             // 
             this.button2.Enabled = false;
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(114, 229);
+            this.button2.Location = new System.Drawing.Point(142, 287);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(97, 47);
             this.button2.TabIndex = 11;
             this.button2.Text = "ukloni";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(3, 8);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(139, 23);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "Izaberite razred:";
             // 
             // sistemZaIzbaciUbaci
             // 
@@ -158,5 +170,6 @@
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label4;
     }
 }

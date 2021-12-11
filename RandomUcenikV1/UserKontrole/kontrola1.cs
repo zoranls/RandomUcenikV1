@@ -112,9 +112,7 @@ namespace RandomUcenikV1
                         RandomFunkcija();
                         break;
                     case true:
-                        nizPROVERADUPL[temp1] = nizUCENICI[broj];
-
-                        label1.Text = nizUCENICI[broj];
+                        nizPROVERADUPL[temp1] = nizUCENICI[broj]; 
                         listBox1.Items.Add(nizUCENICI[broj]);
                         temp1++;
                         break;
@@ -134,48 +132,6 @@ namespace RandomUcenikV1
                 }
             }
         }
-
-        //=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+// 
-        bool provera = true;
-        private void groupBox1_MouseCaptureChanged(object sender, EventArgs e)
-        {
-            int a = groupBox1.Location.Y;
-            switch (provera)
-            {
-                case true:
-                    groupBox1.Location = new Point(groupBox1.Location.X, a -= 25);
-                    provera = false;
-                    break;
-                case false:
-                    groupBox1.Location = new Point(groupBox1.Location.X, a += 25);
-                    provera = true;
-                    break;
-            }
-        }
-        //=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+//
-        int abc = 0;
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            bool proveraStanja = true;
-            PozicijePanela1.x = panel2.Location.X;
-            PozicijePanela1.y = panel2.Location.Y;
-
-            switch (proveraStanja)
-            {
-                case true:
-                    panel2.Location = new Point(PozicijePanela1.x, PozicijePanela1.y -= 280);
-                    abc = PozicijePanela1.y;
-                    proveraStanja = false;
-                    break;
-                case false:
-                    panel2.Location = new Point(PozicijePanela1.x, abc += 280);
-
-                    proveraStanja = true;
-                    break;
-            }
-        } 
-   
     }
 }
 /*

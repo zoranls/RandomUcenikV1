@@ -37,11 +37,11 @@
             // 
             this.webBrowser1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.webBrowser1.Location = new System.Drawing.Point(294, 0);
+            this.webBrowser1.Location = new System.Drawing.Point(0, 141);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.ScriptErrorsSuppressed = true;
-            this.webBrowser1.Size = new System.Drawing.Size(260, 457);
+            this.webBrowser1.Size = new System.Drawing.Size(554, 316);
             this.webBrowser1.TabIndex = 0;
             this.webBrowser1.Url = new System.Uri("http://www.smart.edu.rs", System.UriKind.Absolute);
             // 
@@ -49,7 +49,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(25, 27);
+            this.label1.Location = new System.Drawing.Point(3, 2);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(209, 40);
             this.label1.TabIndex = 1;
@@ -59,13 +59,12 @@
             // richTextBox1
             // 
             this.richTextBox1.BackColor = System.Drawing.Color.Azure;
-            this.richTextBox1.Font = new System.Drawing.Font("Palatino Linotype", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(3, 85);
+            this.richTextBox1.Font = new System.Drawing.Font("Palatino Linotype", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Location = new System.Drawing.Point(0, 45);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(285, 255);
+            this.richTextBox1.Size = new System.Drawing.Size(551, 99);
             this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "Zovem se Zoran Lazarov,\nIdem u Računarsku gimnaziju \"Smart\" , u Novom Sadu\nWeb-sa" +
-    "jt škole nalazi sa desne strane";
+            this.richTextBox1.Text = "Zovem se Zoran Lazarov,\nIdem u Računarsku gimnaziju \"Smart\" , u Novom Sadu";
             // 
             // webSajt
             // 
