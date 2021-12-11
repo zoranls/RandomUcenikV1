@@ -49,16 +49,13 @@ namespace RandomUcenikV1
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
-
-            panel1.Width = 0;
+        { 
             GraphicsPath p = new GraphicsPath();
             p.AddEllipse(1, 1, button1.Width - -25, button1.Height - 2);
             button4.Region = new Region(p);
             button5.Region = new Region(p);
             button6.Region = new Region(p);
-            button7.Region = new Region(p);
-
+            button7.Region = new Region(p); 
         }
 
         private void button3_MouseDown(object sender, MouseEventArgs e)
@@ -98,19 +95,19 @@ namespace RandomUcenikV1
         {
             switch (provera)
             {
-                case true:
+                case false:
                     for (int i = 0; i < 80; i++)
                     {
                         panel1.Width += 1;
                     }
-                    provera = false;
+                    provera = true;
                     break;
-                case false:
+                case true:
                     for (int i = 0; i < 80; i++)
                     {
                         panel1.Width -= 1;
                     }
-                    provera = true;
+                    provera = false;
                     break;
             }
         }
