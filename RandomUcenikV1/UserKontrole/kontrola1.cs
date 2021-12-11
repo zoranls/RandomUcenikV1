@@ -102,20 +102,36 @@ namespace RandomUcenikV1
         int temp1 = 0;
         private void button1_Click(object sender, EventArgs e)
         {
-            RandomFunkcija();
-            switch (MetodaProveravanja(temp2))
+            try
             {
-                case false:
-                    RandomFunkcija();
-                    break;
-                case true:
-                    nizPROVERADUPL[temp1] = nizUCENICI[broj];
 
-                    label1.Text = nizUCENICI[broj];
-                    listBox1.Items.Add(nizUCENICI[broj]);
-                    temp1++;
-                    break;
-                    { }
+                RandomFunkcija();
+                switch (MetodaProveravanja(temp2))
+                {
+                    case false:
+                        RandomFunkcija();
+                        break;
+                    case true:
+                        nizPROVERADUPL[temp1] = nizUCENICI[broj];
+
+                        label1.Text = nizUCENICI[broj];
+                        listBox1.Items.Add(nizUCENICI[broj]);
+                        temp1++;
+                        break;
+                        { }
+                }
+            }
+            catch (Exception e1)
+            {
+                if (MessageBox.Show("Molim Vas odaberite razred" + "\n" + "Da li bi ste voleli videti detaljnu gresku?", "Neocekivana greska", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+
+                {
+                    MessageBox.Show("Tacna greska: " + e1.Message);
+                }
+                else
+                {
+
+                }
             }
         }
 
@@ -214,37 +230,61 @@ namespace RandomUcenikV1
                 }
                 citacIzmene.Close();
             }
-            catch (Exception)
+            catch (Exception e1)
             {
+                if (MessageBox.Show("Doslo je do neocekivane greske. Molim vas pokrenite ponovo aplikaciju." + "\n" + "Da li bi ste voleli videti detaljnu gresku?", "Neocekivana greska", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
 
-                MessageBox.Show("Doslo je do greske. Restartujte aplikaciju. Kod greske: X23H1");
+                {
+                    MessageBox.Show("Tacna greska: " + e1.Message);
+                }
+                else
+                {
+
+                }
             }
         }
 
         //=+=+=+=+=+=+=+=+=+=+IZBACIVANJE UCENIKA =+=+=+=+=+=+=+=+=+=+
         int prosirenjeRazreda;
         private void button2_Click(object sender, EventArgs e)
-        { 
-            int izabranIndeksIzbaci = listBox2.SelectedIndex - 1; //targer index
-            string[] nizReadyForOverWrite = izmenaUcenici;
+        {
+            try
+            {
 
-            for (int i = izabranIndeksIzbaci; i < brojUcenika1 - 1; i++)
-            {
-                nizReadyForOverWrite[i] = nizReadyForOverWrite[i + 1];
+                int izabranIndeksIzbaci = listBox2.SelectedIndex - 1; //targer index
+                string[] nizReadyForOverWrite = izmenaUcenici;
+
+                for (int i = izabranIndeksIzbaci; i < brojUcenika1 - 1; i++)
+                {
+                    nizReadyForOverWrite[i] = nizReadyForOverWrite[i + 1];
+                }
+                string[] nizOverWrite = new string[nizReadyForOverWrite.Length - 1];
+                for (int i = 0; i < nizReadyForOverWrite.Length - 1; i++)
+                {
+                    nizOverWrite[i] = nizReadyForOverWrite[i];
+                }
+                //konacno prepisivanje
+                StreamWriter finalOverWrite = new StreamWriter(path2);
+                //     finalOverWrite.Flush();
+                for (int i = 0; i < nizOverWrite.Length; i++)
+                {
+                    finalOverWrite.WriteLine(nizOverWrite[i]);
+                }
+                finalOverWrite.Close();
+                MessageBox.Show("Uspesno uklonjen odabir. \n Molim Vas pokrenite ponovo aplikaciju kako bi videli izmene.");
             }
-            string[] nizOverWrite = new string[nizReadyForOverWrite.Length - 1];
-            for (int i = 0; i < nizReadyForOverWrite.Length - 1; i++)
+            catch (Exception e1)
             {
-                nizOverWrite[i] = nizReadyForOverWrite[i];
+                if (MessageBox.Show("Molim Vas odaberite razred ili ucenika za izbacivanje." + "\n" + "Da li bi ste voleli videti detaljnu gresku?", "Neocekivana greska", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+
+                {
+                    MessageBox.Show("Tacna greska: " + e1.Message);
+                }
+                else
+                {
+
+                }
             }
-            //konacno prepisivanje
-            StreamWriter finalOverWrite = new StreamWriter(path2);
-            //     finalOverWrite.Flush();
-            for (int i = 0; i < nizOverWrite.Length; i++)
-            {
-                finalOverWrite.WriteLine(nizOverWrite[i]);
-            }
-            finalOverWrite.Close();
         }
         //_-=SISTEM ZA DODAVANJE=-_
         private void button3_Click(object sender, EventArgs e)
@@ -265,7 +305,7 @@ namespace RandomUcenikV1
                 case false:
                     button3.Enabled = false;
                     button2.Enabled = true;
-                    textBox1.Enabled = false; 
+                    textBox1.Enabled = false;
                     break;
             }
         }

@@ -57,6 +57,8 @@ namespace RandomUcenikV1
             button4.Region = new Region(p);
             button5.Region = new Region(p);
             button6.Region = new Region(p);
+            button7.Region = new Region(p);
+
         }
 
         private void button3_MouseDown(object sender, MouseEventArgs e)
@@ -90,12 +92,7 @@ namespace RandomUcenikV1
         {
             this.webSajt1.BringToFront();
             this.webSajt1.Visible = true;
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-           
-        }
+        } 
 
         private void groupBox1_MouseCaptureChanged(object sender, EventArgs e)
         {

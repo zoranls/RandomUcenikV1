@@ -37,6 +37,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
             this.kontrola11 = new RandomUcenikV1.kontrola1();
             this.webSajt1 = new RandomUcenikV1.webSajt();
             this.groupBox1.SuspendLayout();
@@ -103,6 +104,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
@@ -115,11 +117,12 @@
             // button6
             // 
             this.button6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Location = new System.Drawing.Point(7, 87);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(88, 55);
             this.button6.TabIndex = 5;
-            this.button6.Text = "Alati";
+            this.button6.Text = "Uklanjanje/Dodavanje";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button5
@@ -154,6 +157,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1101, 379);
             this.panel2.TabIndex = 2;
+            // 
+            // button7
+            // 
+            this.button7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button7.Location = new System.Drawing.Point(7, 159);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(88, 55);
+            this.button7.TabIndex = 6;
+            this.button7.Text = "Alati";
+            this.button7.UseVisualStyleBackColor = true;
             // 
             // kontrola11
             // 
@@ -210,6 +223,7 @@
         private kontrola1 kontrola11;
         private webSajt webSajt1;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
     }
 }
 

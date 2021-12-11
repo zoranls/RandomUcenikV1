@@ -23,4 +23,3 @@ C:\Users\zlazarov\Documents\GitHub\RandomUcenikV1\RandomUcenikV1\obj\Debug\Rando
 C:\Users\zlazarov\Documents\GitHub\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.exe
 C:\Users\zlazarov\Documents\GitHub\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.pdb
 C:\Users\zlazarov\Documents\GitHub\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.csproj.AssemblyReference.cache
-C:\Users\Zoki\source\repos\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.csprojAssemblyReference.cache
