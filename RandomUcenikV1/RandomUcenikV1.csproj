@@ -61,10 +61,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="sistemZaIzbaciUbaci.cs">
+    <Compile Include="UserKontrole\sistemZaIzbaciUbaci.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="sistemZaIzbaciUbaci.Designer.cs">
+    <Compile Include="UserKontrole\sistemZaIzbaciUbaci.Designer.cs">
       <DependentUpon>sistemZaIzbaciUbaci.cs</DependentUpon>
     </Compile>
     <Compile Include="UserKontrole\alatics.cs">
@@ -99,7 +99,7 @@
     <Compile Include="UserKontrole\webSajt.Designer.cs">
       <DependentUpon>webSajt.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="sistemZaIzbaciUbaci.resx">
+    <EmbeddedResource Include="UserKontrole\sistemZaIzbaciUbaci.resx">
       <DependentUpon>sistemZaIzbaciUbaci.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserKontrole\alatics.resx">
