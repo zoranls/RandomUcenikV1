@@ -26,9 +26,7 @@ namespace RandomUcenikV1
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
-            {
-
-
+            { 
                 switch (comboBox2.SelectedIndex)
                 {
                     case 0:
@@ -151,12 +149,13 @@ namespace RandomUcenikV1
             }
             else
             {
+                string unetaVrednost;
                 string[] nizDodavanjaDjaka = new string[brojUcenika1 + 1];
                 int brojIndeksiranja = 0;
-                while (nizDodavanjaDjaka[brojIndeksiranja] == null)
-                {
-                    brojIndeksiranja++;
-                } 
+                nizDodavanjaDjaka = izmenaUcenici;
+                brojIndeksiranja = nizDodavanjaDjaka.Count();
+                nizDodavanjaDjaka[brojIndeksiranja - 1] = unetaVrednost = Convert.ToString(textBox1.Text);
+
             }
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
