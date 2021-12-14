@@ -141,12 +141,33 @@ namespace RandomUcenikV1
                 }
             }
         }
-         
+
         //_-=SISTEM ZA DODAVANJE=-_
         private void button3_Click(object sender, EventArgs e)
         {
-            string[] nizDodavanjaDjaka = new string[brojUcenika1];
-        }
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("Unesi vrednost.");
+            }
+            else
+            {
+                string[] nizDodavanjaDjaka = new string[brojUcenika1 + 1];
+                int brojIndeksiranja = 0;
+                while (nizDodavanjaDjaka[brojIndeksiranja] == null)
+                {
+                    brojIndeksiranja++;
+                }
 
+            }
+        }
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (comboBox2.SelectedIndex<0)
+            {
+                textBox1.Text = "";
+                MessageBox.Show("Izaberite zazred.");
+            }
+
+        }
     }
 }
