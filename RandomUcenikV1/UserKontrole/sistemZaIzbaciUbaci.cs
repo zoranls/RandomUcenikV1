@@ -156,8 +156,7 @@ namespace RandomUcenikV1
                 while (nizDodavanjaDjaka[brojIndeksiranja] == null)
                 {
                     brojIndeksiranja++;
-                }
-
+                } 
             }
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
