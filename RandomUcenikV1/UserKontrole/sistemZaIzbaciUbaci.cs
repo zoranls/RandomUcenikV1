@@ -26,7 +26,7 @@ namespace RandomUcenikV1
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
-            { 
+            {
                 switch (comboBox2.SelectedIndex)
                 {
                     case 0:
@@ -116,9 +116,9 @@ namespace RandomUcenikV1
                 {
                     nizOverWrite[i] = nizReadyForOverWrite[i];
                 }
-                //konacno prepisivanje
+                //=+=+=+=+=+=+konacno prepisivanje=+=+=+=+=+=+
                 StreamWriter finalOverWrite = new StreamWriter(path2);
-                //     finalOverWrite.Flush();
+                //finalOverWrite.Flush();
                 for (int i = 0; i < nizOverWrite.Length; i++)
                 {
                     finalOverWrite.WriteLine(nizOverWrite[i]);
@@ -152,15 +152,26 @@ namespace RandomUcenikV1
                 string unetaVrednost;
                 string[] nizDodavanjaDjaka = new string[brojUcenika1 + 1];
                 int brojIndeksiranja = 0;
-                nizDodavanjaDjaka = izmenaUcenici;
+                for (int i = 0; i <= izmenaUcenici.Count() - 1; i++)
+                {
+                    nizDodavanjaDjaka[i] = izmenaUcenici[i];
+                }
                 brojIndeksiranja = nizDodavanjaDjaka.Count();
                 nizDodavanjaDjaka[brojIndeksiranja - 1] = unetaVrednost = Convert.ToString(textBox1.Text);
+                StreamWriter overWriteDodavanje = new StreamWriter(path2);
+
+                for (int i = 0; i < nizDodavanjaDjaka.Length; i++)
+                {
+                    overWriteDodavanje.WriteLine(nizDodavanjaDjaka[i]);
+                }
+                overWriteDodavanje.Close();
+                MessageBox.Show("Ušpesno dodat učenik! Molim Vas ponovo pokrenite aplikaciju kako bi videli promene.");
 
             }
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (comboBox2.SelectedIndex<0)
+            if (comboBox2.SelectedIndex < 0)
             {
                 textBox1.Text = "";
                 MessageBox.Show("Izaberite zazred.");
