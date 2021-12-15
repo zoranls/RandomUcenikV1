@@ -51,7 +51,7 @@
             this.panel2.Controls.Add(this.checkBox3);
             this.panel2.Controls.Add(this.checkBox2);
             this.panel2.Controls.Add(this.checkBox1);
-            this.panel2.Location = new System.Drawing.Point(39, 20);
+            this.panel2.Location = new System.Drawing.Point(49, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(266, 224);
             this.panel2.TabIndex = 4;
