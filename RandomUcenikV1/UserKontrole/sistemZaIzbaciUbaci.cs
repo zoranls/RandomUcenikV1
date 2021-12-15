@@ -39,7 +39,13 @@ namespace RandomUcenikV1
                         path2 = Path.GetFullPath("13.txt");
                         break;
                     case 3:
-                        path2 = Path.GetFullPath("primer1.txt");
+                        path2 = Path.GetFullPath("21.txt");
+                        break;
+                    case 4:
+                        path2 = Path.GetFullPath("22.txt");
+                        break;
+                    case 5:
+                        path2 = Path.GetFullPath("23.txt");
                         break;
                 }
                 StreamReader citacIzmene = new StreamReader(path2);

@@ -51,6 +51,15 @@ namespace RandomUcenikV1
                 case 2:
                     path1 = Path.GetFullPath("13.txt");
                     break;
+                case 3:
+                    path1 = Path.GetFullPath("21.txt");
+                    break;
+                case 4:
+                    path1 = Path.GetFullPath("22.txt");
+                    break;
+                case 5:
+                    path1 = Path.GetFullPath("23.txt");
+                    break;
             }
             StreamReader citac = new StreamReader(path1);
             while (!citac.EndOfStream)

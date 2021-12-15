@@ -106,7 +106,9 @@
             "11",
             "12",
             "13",
-            "primer"});
+            "21",
+            "22",
+            "23"});
             this.comboBox2.Location = new System.Drawing.Point(157, 10);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 24);
