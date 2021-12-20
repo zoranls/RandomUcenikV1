@@ -61,17 +61,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UserKontrole\alati.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserKontrole\alati.Designer.cs">
+      <DependentUpon>alati.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserKontrole\sistemZaIzbaciUbaci.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserKontrole\sistemZaIzbaciUbaci.Designer.cs">
       <DependentUpon>sistemZaIzbaciUbaci.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserKontrole\alatics.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserKontrole\alatics.Designer.cs">
-      <DependentUpon>alatics.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -99,11 +99,11 @@
     <Compile Include="UserKontrole\webSajt.Designer.cs">
       <DependentUpon>webSajt.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserKontrole\alati.resx">
+      <DependentUpon>alati.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserKontrole\sistemZaIzbaciUbaci.resx">
       <DependentUpon>sistemZaIzbaciUbaci.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserKontrole\alatics.resx">
-      <DependentUpon>alatics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
