@@ -117,5 +117,10 @@ namespace RandomUcenikV1
             this.sistemZaIzbaciUbaci1.BringToFront();
             this.sistemZaIzbaciUbaci1.Visible = true;
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

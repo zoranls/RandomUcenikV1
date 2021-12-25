@@ -13,7 +13,6 @@ C:\Users\Zoki\source\repos\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV
 C:\Users\zlazarov\Documents\GitHub\RandomUcenikV1\RandomUcenikV1\bin\Debug\RandomUcenikV1.exe.config
 C:\Users\zlazarov\Documents\GitHub\RandomUcenikV1\RandomUcenikV1\bin\Debug\RandomUcenikV1.exe
 C:\Users\zlazarov\Documents\GitHub\RandomUcenikV1\RandomUcenikV1\bin\Debug\RandomUcenikV1.pdb
-C:\Users\zlazarov\Documents\GitHub\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.alatics.resources
 C:\Users\zlazarov\Documents\GitHub\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.Form1.resources
 C:\Users\zlazarov\Documents\GitHub\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.Properties.Resources.resources
 C:\Users\zlazarov\Documents\GitHub\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.kontrola1.resources
@@ -22,7 +21,7 @@ C:\Users\zlazarov\Documents\GitHub\RandomUcenikV1\RandomUcenikV1\obj\Debug\Rando
 C:\Users\zlazarov\Documents\GitHub\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.csproj.CoreCompileInputs.cache
 C:\Users\zlazarov\Documents\GitHub\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.exe
 C:\Users\zlazarov\Documents\GitHub\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.pdb
-C:\Users\zlazarov\Documents\GitHub\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.csproj.AssemblyReference.cache
 C:\Users\Zoki\source\repos\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.sistemZaIzbaciUbaci.resources
 C:\Users\Zoki\source\repos\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.csprojAssemblyReference.cache
 C:\Users\zlazarov\Documents\GitHub\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.sistemZaIzbaciUbaci.resources
+C:\Users\zlazarov\Documents\GitHub\RandomUcenikV1\RandomUcenikV1\obj\Debug\RandomUcenikV1.UserKontrole.alati.resources
